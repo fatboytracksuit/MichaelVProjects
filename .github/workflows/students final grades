@@ -1,0 +1,32 @@
+# @author Michael Velazquez
+# program will average scores with their weighted final calculations
+import sys
+
+finalGrade = 0.0
+
+#input declaration for intergers
+weekly = float(input("enter weekly assignment grade: "))
+
+midprograde = float(input("enter midterm project grade: "))
+
+finprograde = float(input("enter final project grade: "))
+
+#grade weights
+wGWeight = .6
+mPWeight = .2
+fPWeight = .2
+
+#category grade calculations
+Weeklygrade = weekly * wGWeight
+
+midterm = midprograde * mPWeight
+
+final = finprograde * fPWeight
+
+#final grade calculations
+finalGrade = Weeklygrade + midterm + final;
+#printd results
+print("Your final grade for the class is:", "{:.2f}".format(finalGrade)) #format to include decimals to the hundredths place
+print("thank you for using this program")
+#ends program
+sys.exit
